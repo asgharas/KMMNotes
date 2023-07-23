@@ -33,9 +33,17 @@ class NoteListViewModel @Inject constructor(
         )
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), NoteListState())
 
+
+    init {
+        viewModelScope.launch {
+
+        }
+    }
+
     fun loadNotes() {
         viewModelScope.launch {
             savedStateHandle["notes"] = noteDataSource.getAllNotes()
+
         }
     }
 
@@ -51,6 +59,10 @@ class NoteListViewModel @Inject constructor(
             noteDataSource.deleteNoteById(id)
             loadNotes()
         }
+    }
+
+    fun onSearchTextChanged(text: String) {
+        savedStateHandle["searchText"] = text
     }
 
 
