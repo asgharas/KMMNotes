@@ -24,6 +24,8 @@ extension NoteListScreen {
         
         init(noteDataSource: NoteDataSource? = nil) {
             self.noteDataSource = noteDataSource
+            
+            
         }
         
         func setNoteDataSource(noteDataSource: NoteDataSource) {
@@ -39,6 +41,9 @@ extension NoteListScreen {
         
         func deleteNoteById(id: Int64?) {
             if id != nil {
+                //for animation
+                self.filteredNotes = self.filteredNotes.filter{ note in note.id?.int64Value != id }
+                //
                 noteDataSource?.deleteNoteById(id: id!, completionHandler: { err in
                     self.loadNotes()
                 })
