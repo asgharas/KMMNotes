@@ -5,6 +5,8 @@
         android:name=".NoteApp"
         android:allowBackup="false"
         android:supportsRtl="true"
+        android:label="KMM Notes"
+        android:icon="@mipmap/ic_launcher"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
