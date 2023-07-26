@@ -2,7 +2,7 @@
 
 KMMNotes is a Kotlin Multiplatform Mobile (KMM) application. This project is my journey to explore the capabilities of KMM and its potential for seamless interoperability. This project is a follow-through of a KMM course on YouTube by [Phillip Lackner](https://www.youtube.com/@PhilippLackner).
 
-https://github.com/asgharas/KMMNotes/assets/76618200/0def42ae-2bce-48d8-955e-b7ffc0c5c0ef
+[KMM Notes: IOS & Android App](https://github.com/asgharas/KMMNotes/assets/76618200/0def42ae-2bce-48d8-955e-b7ffc0c5c0ef)
 
 
 ## Usage
